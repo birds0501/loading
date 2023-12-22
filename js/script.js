@@ -19,6 +19,11 @@ $(function () {
     //setTimeout(동작, 시간)
     setTimeout(function () {
       $target.fadeOut();
+
+      //1초 후에 로딩요소 지우기
+      setTimeout(function () {
+        $target.remove();
+      }, 1000);
     }, 1000);
   });
 });
